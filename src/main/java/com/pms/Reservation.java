@@ -7,28 +7,37 @@ import java.util.Date;
 
 public class Reservation implements Serializable {
 
-    private String  clientFirstName;
-    private String  clientLastName;
+    private int reservationId;
+    private String  firstName;
+    private String  lastName;
     private String  roomNumber;
     @JsonFormat(pattern="MM-dd-yyyy")
     private Date    frDate;
     @JsonFormat(pattern="MM-dd-yyyy")
     private Date    toDate;
 
-    public String getClientFirstName() {
-        return clientFirstName;
+    public int getReservationId() {
+        return reservationId;
     }
 
-    public void setClientFirstName(String clientFirstName) {
-        this.clientFirstName = clientFirstName;
+    public void setReservationId(int reservationId) {
+        this.reservationId = reservationId;
     }
 
-    public String getClientLastName() {
-        return clientLastName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setClientLastName(String clientLastName) {
-        this.clientLastName = clientLastName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getRoomNumber() {
@@ -58,8 +67,8 @@ public class Reservation implements Serializable {
     @Override
     public String toString() {
         return "Reservation{" +
-                "clientFirstName='" + clientFirstName + '\'' +
-                ", clientLastName='" + clientLastName + '\'' +
+                "clientFirstName='" + firstName + '\'' +
+                ", clientLastName='" + lastName + '\'' +
                 ", roomNumber='" + roomNumber + '\'' +
                 ", frDate=" + frDate +
                 ", toDate=" + toDate +
