@@ -11,9 +11,9 @@ public class ReservationVO implements Serializable {
     private String  firstName;
     private String  lastName;
     private String  roomNumber;
-    @JsonFormat(pattern="MM-dd-yyyy")
+    @JsonFormat(pattern="MM-dd-yyyy hh:mm")
     private Date    frDate;
-    @JsonFormat(pattern="MM-dd-yyyy")
+    @JsonFormat(pattern="MM-dd-yyyy hh:mm")
     private Date    toDate;
 
     public int getReservationId() {

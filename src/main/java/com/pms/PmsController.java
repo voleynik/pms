@@ -2,8 +2,25 @@ package com.pms;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+
 @RestController @RequestMapping("/pms")
 public class PmsController {
+
+    // TEST: http://localhost:8080/pms/range
+    @RequestMapping(value="/range", method = RequestMethod.POST)
+    public @ResponseBody List<Reservation> filter(@RequestBody(required = true) ReservationVO v) {
+
+        return Repository.filter(v);
+    }
+
+    // TEST: http://localhost:8080/pms/all
+    @RequestMapping(value="/all", method = RequestMethod.GET)
+    public @ResponseBody List<Reservation> getAll() {
+
+        return Repository.getAll();
+    }
 
     // TEST: http://localhost:8080/pms/2
     @RequestMapping(value = "/{reservationId}", method = RequestMethod.DELETE)
