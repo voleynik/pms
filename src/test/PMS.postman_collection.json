@@ -1,0 +1,622 @@
+{
+	"variables": [],
+	"info": {
+		"name": "PMS",
+		"_postman_id": "3eb40e38-6fa4-23e1-2af9-80f2ab596bdd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1) add F01 - */pms (POST)",
+			"request": {
+				"url": "http://localhost:8080/pms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"F01\",\n  \"lastName\": \"L01\",\n  \"roomNumber\": \"1001\",\n  \"frDate\": \"01-01-2018 12:00\",\n  \"toDate\": \"01-28-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "2) add F02 - */pms (POST) ",
+			"request": {
+				"url": "http://localhost:8080/pms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"F02\",\n  \"lastName\": \"L02\",\n  \"roomNumber\": \"1002\",\n  \"frDate\": \"02-01-2018 12:00\",\n  \"toDate\": \"02-28-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "3) add F03 - */pms (POST)",
+			"request": {
+				"url": "http://localhost:8080/pms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"F03\",\n  \"lastName\": \"L03\",\n  \"roomNumber\": \"1003\",\n  \"frDate\": \"03-01-2018 12:00\",\n  \"toDate\": \"03-28-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "4) add F04 -*/pms (POST)",
+			"request": {
+				"url": "http://localhost:8080/pms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"F04\",\n  \"lastName\": \"L04\",\n  \"roomNumber\": \"1004\",\n  \"frDate\": \"04-01-2018 12:00\",\n  \"toDate\": \"04-28-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5) add F05 - */pms (POST)",
+			"request": {
+				"url": "http://localhost:8080/pms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"F05\",\n  \"lastName\": \"L05\",\n  \"roomNumber\": \"1005\",\n  \"frDate\": \"05-01-2018 12:00\",\n  \"toDate\": \"05-28-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "6) add F06 - */pms (POST)",
+			"request": {
+				"url": "http://localhost:8080/pms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"F06\",\n  \"lastName\": \"L06\",\n  \"roomNumber\": \"1006\",\n  \"frDate\": \"06-01-2018 12:00\",\n  \"toDate\": \"06-28-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "7) view one - */pms/6 (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/6",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clientFirstName\": \"Bob\",\n  \"clientLastName\": \"Miller\",\n  \"roomNumber\": \"5\",\n  \"frDate\": \"05-10-2017\",\n  \"toDate\": \"06-10-2017\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "8) view one -*/pms/1 (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clientFirstName\": \"Bob\",\n  \"clientLastName\": \"Miller\",\n  \"roomNumber\": \"5\",\n  \"frDate\": \"05-10-2017\",\n  \"toDate\": \"06-10-2017\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "9) view one - */pms/5 (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/5",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clientFirstName\": \"Bob\",\n  \"clientLastName\": \"Miller\",\n  \"roomNumber\": \"5\",\n  \"frDate\": \"05-10-2017\",\n  \"toDate\": \"06-10-2017\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "10) view one - */pms/2 (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clientFirstName\": \"Bob\",\n  \"clientLastName\": \"Miller\",\n  \"roomNumber\": \"5\",\n  \"frDate\": \"05-10-2017\",\n  \"toDate\": \"06-10-2017\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "11) view one - */pms/4 (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clientFirstName\": \"Bob\",\n  \"clientLastName\": \"Miller\",\n  \"roomNumber\": \"5\",\n  \"frDate\": \"05-10-2017\",\n  \"toDate\": \"06-10-2017\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "12) view one - */pms/3 (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"clientFirstName\": \"Bob\",\n  \"clientLastName\": \"Miller\",\n  \"roomNumber\": \"5\",\n  \"frDate\": \"05-10-2017\",\n  \"toDate\": \"06-10-2017\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "13) update - */pms/6 (PUT)",
+			"request": {
+				"url": "http://localhost:8080/pms/6",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"reservationId\": \"6\",\n  \"firstName\": \"F06a\",\n  \"lastName\": \"L06a\",\n  \"roomNumber\": \"1006a\",\n  \"frDate\": \"06-02-2018 12:00\",\n  \"toDate\": \"06-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "14) update - */pms/1 (PUT)",
+			"request": {
+				"url": "http://localhost:8080/pms/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"reservationId\": \"1\",\n  \"firstName\": \"F01a\",\n  \"lastName\": \"L01a\",\n  \"roomNumber\": \"1001a\",\n  \"frDate\": \"01-02-2018 12:00\",\n  \"toDate\": \"01-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "15) update - */pms/5 (PUT)",
+			"request": {
+				"url": "http://localhost:8080/pms/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"reservationId\": \"5\",\n  \"firstName\": \"F05a\",\n  \"lastName\": \"L05a\",\n  \"roomNumber\": \"1005a\",\n  \"frDate\": \"05-02-2018 12:00\",\n  \"toDate\": \"05-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "16) update - */pms/2 (PUT)",
+			"request": {
+				"url": "http://localhost:8080/pms/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"reservationId\": \"2\",\n  \"firstName\": \"F02a\",\n  \"lastName\": \"L02a\",\n  \"roomNumber\": \"1002a\",\n  \"frDate\": \"02-02-2018 12:00\",\n  \"toDate\": \"02-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "17) update - */pms/4 (PUT)",
+			"request": {
+				"url": "http://localhost:8080/pms/4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"reservationId\": \"4\",\n  \"firstName\": \"F04a\",\n  \"lastName\": \"L04a\",\n  \"roomNumber\": \"1004a\",\n  \"frDate\": \"04-02-2018 12:00\",\n  \"toDate\": \"04-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "18) update - */pms/3 (PUT)",
+			"request": {
+				"url": "http://localhost:8080/pms/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"reservationId\": \"3\",\n  \"firstName\": \"F03a\",\n  \"lastName\": \"L03a\",\n  \"roomNumber\": \"1003a\",\n  \"frDate\": \"03-02-2018 12:00\",\n  \"toDate\": \"03-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "19) get ALL - */pms/all (GET)",
+			"request": {
+				"url": "http://localhost:8080/pms/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "20) range */pms/range (POST) - Jan 15 - Mar 15",
+			"request": {
+				"url": "http://localhost:8080/pms/range",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"frDate\": \"01-15-2018 12:00\",\n  \"toDate\": \"03-15-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "21) range */pms/range (POST) - Mar 1 - May 1",
+			"request": {
+				"url": "http://localhost:8080/pms/range",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"frDate\": \"03-01-2018 12:00\",\n  \"toDate\": \"05-01-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "22) range */pms/range (POST) - Mar 29 - May 27",
+			"request": {
+				"url": "http://localhost:8080/pms/range",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"frDate\": \"03-29-2018 12:00\",\n  \"toDate\": \"05-27-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "23) range */pms/range (POST) - Jul 1 - Jul 15",
+			"request": {
+				"url": "http://localhost:8080/pms/range",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"frDate\": \"07-01-2018 12:00\",\n  \"toDate\": \"07-15-2018 12:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "24) delete one */pms/2 (DELETE)",
+			"request": {
+				"url": "http://localhost:8080/pms/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "25) delete one */pms/6 (DELETE)",
+			"request": {
+				"url": "http://localhost:8080/pms/6",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
