@@ -7,7 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import java.sql.SQLException; // ******* Only available with "Ultimate" edition of IntelliJ.
+import java.sql.SQLException;
+
+/////////// NOT used in this demo. Could be used only with "Ultimate" (Paid) version of IntelliJ. ////////////////
 
 @Configuration
 @Profile("dev") // Only activate this in the "dev" profile
