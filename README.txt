@@ -25,7 +25,7 @@ Synchronization, concurrency, referential constraints are not provided.
 -6- Adjust URL variable in PMS through “Manage Environments” clicking on gear icon in right-top corner.
 	(can be localhost when running in JVM).
 -7- Add two headers: Content-Type=application/json and Accept=application/json
--6- Run manually all 25 test cases. First 6 should be run only once.
+-6- Run manually all 25 test cases. First 6 should be run in sequence and only once.
 
 
 =- Test in Docker
