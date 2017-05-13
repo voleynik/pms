@@ -41,8 +41,16 @@ Synchronization, concurrency, referential constraints are not provided.
 CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                    NAMES
 12a20c09703a        voleynik/pms        "java -jar pms-0.0..."   About a minute ago   Up About a minute   0.0.0.0:8080->8080/tcp   friendly_shaw
 
--5- docker inspect --format '{{ .NetworkSettings.IPAddress }}' 12a20c09703a
-	172.17.0.2
+-5- It looks like a macintosh host running docker exposes 8080 port. Use "ifconfig" to get host's IP.
+>ifconfig
+en1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	inet 172.26.0.150 netmask 0xffffff00 broadcast 172.26.0.255
 
--6- Adjust "URL" environment varialble in Postman
+-6- Adjust "URL" environment variables in Postman:
+URL     172.26.0.150
+PORT    8080
+
 -7- Use Postman to run test cases.
+
+NOTE: For testing PMS running as a docker container on Windows or Linux may need different network
+arrangement.
