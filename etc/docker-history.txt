@@ -1,0 +1,105 @@
+  503  which docker
+  504  docker run hello-world
+  505  ps aux | grep docker
+  507  docker pull busybox
+  508  docker images
+  509  docker run busybox
+  510  docker run busybox echo "hello from busybox"
+  511  docker ps
+  512  docker ps -a
+  513  docker run -it busybox sh
+  514  docker run --help
+  516  docker images
+  517  docker rm 00f017a8c2a6
+  518  docker rm 48b5124b2768
+  519  docker ps
+  520  docker ps -a
+  521  docker run prakhar1989/static-site
+  522  https://hub.docker.com/r/prakhar1989/static-site/
+  523  docker run https://hub.docker.com/r/prakhar1989/static-site/
+  524  docker run https://hub.docker.com/r/prakhar1989/static-site
+  525  docker run -d -P --name static-site https://hub.docker.com/r/prakhar1989/static-site
+  526  docker run -d -P --name static-site https://hub.docker.com/r/prakhar1989/static-site
+  527  docker pull prakhar1989/static-site
+  528  docker run  prakhar1989/static-site
+  529  docker run -d -P --name static-site prakhar1989/static-site
+  530  docker port static-site
+  531  docker images
+  532  docker ps
+  533  docker stop f01030e1dcf3
+  534  docker stop static-site
+  535  docker images
+  605  docker --v
+  606  docker version
+  608  sudo docker run ubuntu:14.04 /bin/echo 'Hello world'
+  609  docker images
+  610  sudo docker rm 302fa07d8117
+  611  docker
+  612  docker-compose
+  613  docker-machine
+  614  docker --version
+  615  docker-machine --version
+  616  docker ps
+  617  docker ps -a
+  618  docker rm -f optimistic_swanson
+  619  docker ps -a
+  620  docker images
+  621  docker rmi 302fa07d8117
+  622  docker
+  623  docker start
+  632  cd /Users/voleynik/Documents/vvo2/vodata/projects/keypr-docker
+  634  docker build -f Dockerfile -t pms .
+  635  docker images
+  636  docker run -p 8080:8080 -t pms
+  638  docker push --help
+  639  docker push pms
+  640  docker images
+  641  docker push voleynik/pms
+  643  docker login
+  644  docker tag pms voleynik/pms
+  645  docker push voleynik/pms
+  646  docker images
+  647  docker rmi 72c3b2ef98ce
+  648  docker stop pms
+  649  docker stop voleynik/pms
+  650  docker stop
+  651  docker ps
+  652  docker stop f26d6d6530bf
+  653  docker images
+  654  docker rmi voleynik/pms
+  655  docker images
+  656  docker pull voleynik/pms
+  657  docker images
+  658  docker run voleynik/pms
+  659  docker run voleynik/pms
+  660  docker ps
+  661  docker run voleynik/pms
+  662  docker images
+  663  docker rmi 72c3b2ef98ce
+  664  docker rmi f01030e1dcf3
+  665  docker ps -a
+  666  docker rm 5f0f2da1b927
+  667  docker rm 0530334d738a
+  668  docker rm 33d715f5a025 d02dadf0d95e 8dd663fc85c6
+  669  docker ps -a
+  670  docker rm 8e09ff3ce488 03196e7c5756
+  671  docker ps -a
+  672  docker pull voleynik/pms
+  673  docker images
+  674  docker ps
+  676  docker run -p 8080:8080 -t voleynik/pms
+  677  history | grep docker
+
+docker ps
+docker attach d17016c6422e
+ip addr show
+
+root@d17016c6422e:/# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  1.0 11.9 2993192 244012 ?      Ssl+ 16:02   0:13 java -jar pms-0.0.1-SNAPSHOT.jar
+
+root@d17016c6422e:/# fuser 8080/tcp
+8080/tcp:                1
+root@d17016c6422e:/#
+
+route -n add 172.17.0.0/16 172.26.0.150 # did not work
